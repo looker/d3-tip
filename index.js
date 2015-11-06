@@ -75,6 +75,14 @@
       return tip
     }
 
+    // Public - returns node of tooltip
+    //
+    // Returns a node
+    tip.node = function() {
+      var node = getNodeEl().node()
+      return node
+    }
+
     // Public: Proxy attr calls to the d3 tip container.  Sets or gets attribute value.
     //
     // n - name of the attribute
